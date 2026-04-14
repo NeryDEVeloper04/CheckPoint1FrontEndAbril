@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@400;600&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand:      #064661;
+  --brand-70:   rgba(6, 70, 97, 0.7);
+  --card-blue:  #99BEDF;
+  --bg:         #EFE9F4;
+  --white:      #FFFFFF;
+  --text-dark:  #262626;
+  --text-body:  #171D1C;
+  --font-title: 'Limelight', cursive;
+  --font-body:  'Poppins', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text-dark);
+  min-width: 320px;
+}
+
+.header {
+  width: 100%;
+  height: 128px;
+  background: var(--brand);
+  display: flex;
+  align-items: center;
+  padding: 0 72px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.banner {
+  width: 100%;
+  height: 465px;
+  background: url('/CheckPoint1FrontEndAbril/imagens/banner.jpg') center / cover no-repeat;
+  background-color: var(--brand);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.texto {
+  padding-top: 78px;
+}
+
+.texto h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 22px;
+}
+
+.texto p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-dark);
+}
+.dupla {
+  display: grid;
+  grid-template-columns: 545px 538px;
+  gap: 55px;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.texto-box h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 20px;
+}
+
+.texto-box p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-body);
+}
+
+.dupla img {
+  width: 538px;
+  height: 361px;
+  object-fit: cover;
+  display: block;
+  margin-top: 59px;
+}
+
+.topicos {
+  margin-top: 90px;
+}
+
+.topicos h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 46px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  height: 167px;
+  border: 3px solid var(--brand);
+  border-radius: 10px;
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  background: var(--card-blue);
+}
+
+.card:nth-child(1) h3,
+.card:nth-child(3) h3,
+.card:nth-child(1) p,
+.card:nth-child(3) p {
+  color: var(--text-dark);
+}
+
+.card:nth-child(2) {
+  background: var(--brand-70);
+}
+
+.card:nth-child(2) h3,
+.card:nth-child(2) p {
+  color: var(--white);
+}
+
+.card h3 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.card p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.galeria {
+  margin-top: 94px;
+}
+
+.galeria h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 44px;
+}
+
+.imagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.imagens img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50px;
+  display: block;
+}
+.contato {
+  margin-top: 96px;
+}
+
+.contato h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 33px;
+}
+
+.contato a,
+.contato p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 50px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.contato a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+.contato a img,
+.contato p img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+footer {
+  width: 100%;
+  height: 153px;
+  background: var(--brand);
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 72px;
+}
+
+footer p {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+@media (max-width: 1100px) {
+  .header,
+  .container,
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .dupla {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .dupla img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .banner {
+    height: 220px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .imagens {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .imagens img {
+    height: 160px;
+    border-radius: 24px;
+  }
+
+  footer {
+    height: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+}
